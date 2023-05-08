@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# Packages and Components Used in the Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Packages
 
-In the project directory, you can run:
+1. Used useState, which is a React Hook that allow us to add state to functional components.
+2. Used axios package, which is used for making HTTP requests, here used for fetching the contents of the test.txt file.
+3. Used recharts package, which is a charting library built on top of the D3.js library. It is used here for creating histogram.
+4. Used Papa from the papaparse package, which is a powerful CSV parser and exporter. It's used here for exporting the histogram data as a CSV file.
 
-### `npm start`
+## Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+It is containing two functions. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. fetchAndParseData: This function is responsible for fetching the content of the test.txt file, parsing it to calculate the word frequency, and updating the data state with the top 20 most frequent words.
 
-### `npm test`
+2. exportCSV: This function is responsible for exporting the histogram data as a CSV file when the "Export" button is clicked.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Then the return part contains the following divs.
 
-### `npm run build`
+1. A div element serves as a wrapper for the entire component.
+2. A div element with a className attribute set to "buttons-container" contains the Submit and Export buttons, along with their associated click event handlers. The Export button is only rendered if the data state is not null.
+3. A div element with a className attribute set to "chart-container" wraps the BarChart component from the recharts package. This part is only rendered if the data state is not null. The BarChart component and its children are responsible for rendering the histogram based on the data state.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Deployed Link :- 
+https://ttt-assignment-sanjayhjp121.vercel.app/
