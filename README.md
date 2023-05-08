@@ -24,5 +24,5 @@ Then the return part contains the following divs.
 3. A div element with a className attribute set to "chart-container" wraps the BarChart component from the recharts package. This part is only rendered if the data state is not null. The BarChart component and its children are responsible for rendering the histogram based on the data state.
 
 
-##Deployed Link :- 
+## Deployed Link
 https://ttt-assignment.vercel.app/
