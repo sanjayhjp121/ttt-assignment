@@ -25,4 +25,4 @@ Then the return part contains the following divs.
 
 
 ##Deployed Link :- 
-https://ttt-assignment-sanjayhjp121.vercel.app/
+https://ttt-assignment.vercel.app/
