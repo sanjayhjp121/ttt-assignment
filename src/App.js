@@ -45,7 +45,7 @@ const App = () => {
       {data && (
         <div className="chart-container">
           <BarChart
-            width={500}
+            width={1000}
             height={300}
             data={data}
             margin={{
